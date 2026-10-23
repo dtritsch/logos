@@ -30,11 +30,11 @@
     <h1><a href="/" style="text-decoration:none; color:inherit;">{{ site.title }}</a></h1>
     <p><em>{{ site.tagline }}</em></p>
     <nav>
-      <a href="/">Home</a>
-      <a href="/syllabus/">Syllabus</a>
-      <a href="/reading-vault/">Reading Vault</a>
-      <a href="/case-studies/">Case Studies</a>
-      <a href="/monographs/">Monographs</a>
+      <a href="{{ '/' | relative_url }}">Home</a>
+      <a href="{{ '/syllabus/' | relative_url }}">Syllabus</a>
+      <a href="{{ '/reading-vault/' | relative_url }}">Reading Vault</a>
+      <a href="{{ '/case-studies/' | relative_url }}">Case Studies</a>
+      <a href="{{ '/monographs/' | relative_url }}">Monographs</a>
     </nav>
   </header>
 
