@@ -1,0 +1,45 @@
+backend:
+  name: github
+  repo: dtritsch/logos
+  branch: main
+
+site_url: https://logos.treachtheword.com
+display_url: https://logos.treachtheword.com
+
+media_folder: "assets/uploads"
+public_folder: "/assets/uploads"
+
+collections:
+  - name: "reading_vault"
+    label: "Reading Vault (Annotated Bibs)"
+    folder: "_reading_vault"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Author Studied", name: "author_studied", widget: "string"}
+      - {label: "Curriculum Phase", name: "phase", widget: "select", options: ["Phase 1: Foundations", "Phase 2: Historical Survey", "Phase 3: Classical Antiquity", "Phase 4: Enlightenment", "Phase 5: 20th C. Revival", "Phase 6: Modern Metaphor", "Phase 7: Applied Systems", "Phase 8: Capstone"]}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "300-Word Synthesis & Critical Analysis", name: "body", widget: "markdown"}
+
+  - name: "case_studies"
+    label: "Logic & Case Studies"
+    folder: "_case_studies"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Summary", name: "summary", widget: "text"}
+      - {label: "Analysis Body", name: "body", widget: "markdown"}
+
+  - name: "monographs"
+    label: "Master Capstone Treatises"
+    folder: "_monographs"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Abstract", name: "abstract", widget: "text"}
+      - {label: "Monograph Content", name: "body", widget: "markdown"}

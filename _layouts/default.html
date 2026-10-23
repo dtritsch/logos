@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+  {% seo %}
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; max-width: 800px; margin: 0 auto; padding: 2rem 1rem; color: #222; }
+    header { border-bottom: 2px solid #333; padding-bottom: 1rem; margin-bottom: 2rem; }
+    nav a { margin-right: 1rem; text-decoration: none; font-weight: bold; color: #0056b3; }
+    blockquote { border-left: 4px solid #0056b3; margin: 0; padding-left: 1rem; color: #555; }
+    footer { margin-top: 3rem; border-top: 1px solid #ddd; padding-top: 1rem; font-size: 0.9em; color: #666; }
+  </style>
+
+  <!-- MathJax logic notation -->
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']]
+      }
+    };
+  </script>
+</head>
+<body>
+  <header>
+    <h1><a href="/" style="text-decoration:none; color:inherit;">{{ site.title }}</a></h1>
+    <p><em>{{ site.tagline }}</em></p>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/syllabus/">Syllabus</a>
+      <a href="/reading-vault/">Reading Vault</a>
+      <a href="/case-studies/">Case Studies</a>
+      <a href="/monographs/">Monographs</a>
+    </nav>
+  </header>
+
+  <main>
+    {{ content }}
+  </main>
+
+  <footer>
+    <p>&copy; {{ 'now' | date: "%Y" }} {{ site.author.name }} — {{ site.description }}</p>
+  </footer>
+</body>
+</html>

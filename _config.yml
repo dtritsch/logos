@@ -1,0 +1,34 @@
+title: "The Logos Hub"
+tagline: "Logic, Rhetoric, and Applied Intellect"
+description: "An independent study hub and dynamic portfolio of my research in logic, rhetoric, and applied intellect."
+url: "https://logos.treachtheword.com"
+baseurl: ""
+
+author:
+  name: "Delbert Tritsch"
+
+collections:
+  reading_vault:
+    output: true
+    permalink: /reading-vault/:path/
+  case_studies:
+    output: true
+    permalink: /case-studies/:path/
+  monographs:
+    output: true
+    permalink: /monographs/:path/
+
+markdown: kramdown
+kramdown:
+  math_engine: mathjax
+  input: GFM
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
