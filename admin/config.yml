@@ -2,6 +2,8 @@ backend:
   name: github
   repo: dtritsch/logos
   branch: main
+  site_domain: logos.treachtheword.com
+  base_url: https://curious-moxie-d7a976.netlify.app
 
 site_url: https://logos.treachtheword.com
 display_url: https://logos.treachtheword.com
