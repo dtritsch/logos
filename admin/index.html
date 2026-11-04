@@ -12,5 +12,8 @@ permalink: /admin/
 </head>
 <body>
   <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+  <script>
+    CMS.registerPreviewStyle("{{ '/styles.css' | relative_url }}");
+  </script>
 </body>
 </html>
