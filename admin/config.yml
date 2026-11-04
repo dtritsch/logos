@@ -5,6 +5,8 @@ backend:
   site_domain: logos.treachtheword.com
   base_url: https://api.netlify.com
 
+publish_mode: editorial_workflow
+
 site_url: https://logos.treachtheword.com
 display_url: https://logos.treachtheword.com
 
