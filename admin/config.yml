@@ -23,7 +23,7 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Author Studied", name: "author_studied", widget: "string"}
       - {label: "Curriculum Phase", name: "phase", widget: "select", options: ["Phase 1: Foundations", "Phase 2: Historical Survey", "Phase 3: Classical Antiquity", "Phase 4: Enlightenment", "Phase 5: 20th C. Revival", "Phase 6: Modern Metaphor", "Phase 7: Applied Systems", "Phase 8: Capstone"]}
-      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Publish Date", name: "date", widget: "datetime", format: "YYYY-MM-DD", date_format: "YYYY-MM-DD", time_format: false}
       - {label: "300-Word Synthesis & Critical Analysis", name: "body", widget: "markdown"}
 
   - name: "case_studies"
@@ -33,7 +33,7 @@ collections:
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Publish Date", name: "date", widget: "datetime", format: "YYYY-MM-DD", date_format: "YYYY-MM-DD", time_format: false}
       - {label: "Summary", name: "summary", widget: "text"}
       - {label: "Analysis Body", name: "body", widget: "markdown"}
 
@@ -44,6 +44,6 @@ collections:
     slug: "{{slug}}"
     fields:
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Publish Date", name: "date", widget: "datetime", format: "YYYY-MM-DD", date_format: "YYYY-MM-DD", time_format: false}
       - {label: "Abstract", name: "abstract", widget: "text"}
       - {label: "Monograph Content", name: "body", widget: "markdown"}
