@@ -4,6 +4,11 @@ backend:
   branch: main
   site_domain: logos.treachtheword.com
   base_url: https://decap-oauth.delbert-tritsch.workers.dev
+  squash_merges: true
+
+logo:
+  src: https://logos.treachtheword.com/logosTTWlogo.png
+  show_in_header: true
 
 publish_mode: editorial_workflow
 
