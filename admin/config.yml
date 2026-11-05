@@ -3,7 +3,7 @@ backend:
   repo: dtritsch/logos
   branch: main
   site_domain: logos.treachtheword.com
-  base_url: https://api.netlify.com
+  base_url: https://decap-oauth.delbert-tritsch.workers.dev
 
 publish_mode: editorial_workflow
 
