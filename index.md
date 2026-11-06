@@ -3,9 +3,9 @@ layout: default
 title: Home
 ---
 
-# Welcome to The Logos Hub
+# Welcome to {{ site.title }}
 
-This digital archive serves as an independent study hub and dynamic portfolio of my research in **logic, rhetoric, and applied intellect**.
+*{{ site.title }}* is the scholarly portfolio of Delbert Tritsch, collecting research, bibliographies, and publications in **logic, rhetoric, and applied intellect**.
 
 ## Research Architecture
 

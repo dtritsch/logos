@@ -44,7 +44,9 @@
   </main>
 
   <footer>
-    <p>&copy; {{ 'now' | date: "%Y" }} {{ site.author.name }} — {{ site.description }}</p>
+    {% assign start_year = 2026 %}
+    {% assign current_year = 'now' | date: "%Y" | plus: 0 %}
+    &copy; {% if current_year > start_year %}{{ start_year }}&ndash;{{ current_year }}{% else %}{{ start_year }}{% endif %} {{ site.author.name }} — {{ site.description }}
   </footer>
 </body>
 </html>
